@@ -8,9 +8,9 @@
       <FILE id="i9eHHK" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
       <GROUP id="{22853339-07DF-87CC-021E-4F484F21C2DA}" name="biquad">
-        <FILE id="RB4GMT" name="Biquad.cpp" compile="1" resource="0" file="../../biquad/Biquad.cpp"/>
-        <FILE id="exxEM7" name="Biquad.h" compile="0" resource="0" file="../../biquad/Biquad.h"/>
-        <FILE id="mvDTMh" name="README.md" compile="0" resource="1" file="../../biquad/README.md"/>
+        <FILE id="kjyYzr" name="Biquad.cpp" compile="1" resource="0" file="Source/biquad/Biquad.cpp"/>
+        <FILE id="PhPgCD" name="Biquad.h" compile="0" resource="0" file="Source/biquad/Biquad.h"/>
+        <FILE id="fsckMK" name="README.md" compile="0" resource="1" file="Source/biquad/README.md"/>
       </GROUP>
       <FILE id="zLxucS" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
@@ -20,7 +20,7 @@
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" headerPath="/Users/takashiminagawa/dev/biquad"/>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="./Source"/>
         <CONFIGURATION isDebug="0" name="Release"/>
       </CONFIGURATIONS>
       <MODULEPATHS>

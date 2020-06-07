@@ -22,9 +22,13 @@ static const unsigned char temp_binary_data_0[] =
 "double fs = 44100; // sample rate\n"
 "double f0 = 1000; // center (cutoff) frequency\n"
 "double Q = 1 / std::sqrt(2);\n"
-"\n"
 "// dbGain parameter is required in Peaking, LowShelf, HighShelf\n"
-"Biquad filter(FilterType::Lowpass, fs, f0, Q);\n"
+"double dBGain = 0.0;\n"
+"\n"
+"Parameters params = {FilterType::LowPass, fs, f0, Q, dBGain};\n"
+"\n"
+"Biquad filter;\n"
+"filter.setParams(params);\n"
 "\n"
 "// calculate output sample in processing loop\n"
 "for (int i = 0; i < numSample; i++) \n"
@@ -44,7 +48,7 @@ const char* getNamedResource (const char* resourceNameUTF8, int& numBytes)
 
     switch (hash)
     {
-        case 0x64791dc8:  numBytes = 543; return README_md;
+        case 0x64791dc8:  numBytes = 621; return README_md;
         default: break;
     }
 

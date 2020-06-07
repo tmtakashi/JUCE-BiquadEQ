@@ -81,9 +81,9 @@
 			isa = PBXBuildFile;
 			fileRef = 18D3A0BE063F0B0EE1F3E47A;
 		};
-		2F49250BDF5DAB038E5940D0 = {
+		D242EA90FAB7A9F08D67C2A7 = {
 			isa = PBXBuildFile;
-			fileRef = 8E68B0EAB95CEBA36E55A9D5;
+			fileRef = 0D98B06C4E0A309F47E64690;
 		};
 		9437DE5D3B2982975F9FF65E = {
 			isa = PBXBuildFile;
@@ -208,6 +208,13 @@
 			path = "~/JUCE/modules/juce_graphics";
 			sourceTree = "<absolute>";
 		};
+		0D98B06C4E0A309F47E64690 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Biquad.cpp;
+			path = ../../Source/biquad/Biquad.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		0E521B6B6DAB52066B79F9DC = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -236,13 +243,6 @@
 			path = "../../JuceLibraryCode/include_juce_audio_devices.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
-		25611E48F5A330969D130D0F = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = Biquad.h;
-			path = ../../../../biquad/Biquad.h;
-			sourceTree = "SOURCE_ROOT";
-		};
 		26D04946CF63CC5102E8EB51 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -256,13 +256,6 @@
 			name = IOKit.framework;
 			path = System/Library/Frameworks/IOKit.framework;
 			sourceTree = SDKROOT;
-		};
-		3694188889431E7164F0A875 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.cpp;
-			name = BinaryData.cpp;
-			path = ../../JuceLibraryCode/BinaryData.cpp;
-			sourceTree = "SOURCE_ROOT";
 		};
 		39E3C2599411B6218BDF200E = {
 			isa = PBXFileReference;
@@ -278,12 +271,26 @@
 			path = BiquadEq.component;
 			sourceTree = "BUILT_PRODUCTS_DIR";
 		};
+		1D4ED53FA06284E2CD5AFEB0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.md;
+			name = README.md;
+			path = ../../Source/biquad/README.md;
+			sourceTree = "SOURCE_ROOT";
+		};
 		2BB286F35ABF51B1FED7A20A = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = CoreAudioKit.framework;
 			path = System/Library/Frameworks/CoreAudioKit.framework;
 			sourceTree = SDKROOT;
+		};
+		3694188889431E7164F0A875 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = BinaryData.cpp;
+			path = ../../JuceLibraryCode/BinaryData.cpp;
+			sourceTree = "SOURCE_ROOT";
 		};
 		3AB9F9BCA393530ECFC7E2C7 = {
 			isa = PBXFileReference;
@@ -383,6 +390,13 @@
 			path = "../../JuceLibraryCode/include_juce_gui_extra.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		7FE43C581CD8E95034F282F3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Biquad.h;
+			path = ../../Source/biquad/Biquad.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		85A657A6F4D96FD79CB39E5B = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -418,19 +432,19 @@
 			path = System/Library/Frameworks/Carbon.framework;
 			sourceTree = SDKROOT;
 		};
-		8E68B0EAB95CEBA36E55A9D5 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.cpp;
-			name = Biquad.cpp;
-			path = ../../../../biquad/Biquad.cpp;
-			sourceTree = "SOURCE_ROOT";
-		};
 		960F31A610AED16A95656230 = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = Accelerate.framework;
 			path = System/Library/Frameworks/Accelerate.framework;
 			sourceTree = SDKROOT;
+		};
+		985D4A93311427201F140D67 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_gui_basics";
+			path = "~/JUCE/modules/juce_gui_basics";
+			sourceTree = "<absolute>";
 		};
 		98BA33A827492C942FDB134B = {
 			isa = PBXFileReference;
@@ -446,13 +460,6 @@
 			path = libBiquadEq.a;
 			sourceTree = "BUILT_PRODUCTS_DIR";
 		};
-		985D4A93311427201F140D67 = {
-			isa = PBXFileReference;
-			lastKnownFileType = file;
-			name = "juce_gui_basics";
-			path = "~/JUCE/modules/juce_gui_basics";
-			sourceTree = "<absolute>";
-		};
 		9AD6EE5DFDC8C14861876E3B = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -465,13 +472,6 @@
 			lastKnownFileType = file.r;
 			name = "include_juce_audio_plugin_client_AU.r";
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_AU.r";
-			sourceTree = "SOURCE_ROOT";
-		};
-		A2EE50D65C8937A912F1E1C3 = {
-			isa = PBXFileReference;
-			lastKnownFileType = file.md;
-			name = README.md;
-			path = ../../../../biquad/README.md;
 			sourceTree = "SOURCE_ROOT";
 		};
 		A38DBD9DD83F6FD9E5F3C3DF = {
@@ -638,9 +638,9 @@
 		E368B09FB2216A72C39604E9 = {
 			isa = PBXGroup;
 			children = (
-				8E68B0EAB95CEBA36E55A9D5,
-				25611E48F5A330969D130D0F,
-				A2EE50D65C8937A912F1E1C3,
+				0D98B06C4E0A309F47E64690,
+				7FE43C581CD8E95034F282F3,
+				1D4ED53FA06284E2CD5AFEB0,
 			);
 			name = biquad;
 			sourceTree = "<group>";
@@ -823,7 +823,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
-					"/Users/takashiminagawa/dev/biquad",
+					"./Source",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -928,7 +928,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
-					"/Users/takashiminagawa/dev/biquad",
+					"./Source",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1032,7 +1032,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
-					"/Users/takashiminagawa/dev/biquad",
+					"./Source",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1126,7 +1126,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
-					"/Users/takashiminagawa/dev/biquad",
+					"./Source",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1536,7 +1536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505EE4D8F5F3A263C934AC88,
-				2F49250BDF5DAB038E5940D0,
+				D242EA90FAB7A9F08D67C2A7,
 				9437DE5D3B2982975F9FF65E,
 				FEC8443876E55B13E060DEBF,
 				0531A5F76C98ED9FE31053E4,
