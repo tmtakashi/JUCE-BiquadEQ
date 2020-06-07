@@ -81,9 +81,9 @@
 			isa = PBXBuildFile;
 			fileRef = 18D3A0BE063F0B0EE1F3E47A;
 		};
-		D242EA90FAB7A9F08D67C2A7 = {
+		D9AD199564B17062A8477102 = {
 			isa = PBXBuildFile;
-			fileRef = 0D98B06C4E0A309F47E64690;
+			fileRef = DBC8B294BC616F0408753877;
 		};
 		9437DE5D3B2982975F9FF65E = {
 			isa = PBXBuildFile;
@@ -208,13 +208,6 @@
 			path = "~/JUCE/modules/juce_graphics";
 			sourceTree = "<absolute>";
 		};
-		0D98B06C4E0A309F47E64690 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.cpp;
-			name = Biquad.cpp;
-			path = ../../Source/biquad/Biquad.cpp;
-			sourceTree = "SOURCE_ROOT";
-		};
 		0E521B6B6DAB52066B79F9DC = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -235,13 +228,6 @@
 			name = AudioUnit.framework;
 			path = System/Library/Frameworks/AudioUnit.framework;
 			sourceTree = SDKROOT;
-		};
-		24995731E76690B6BBA8E383 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.objcpp;
-			name = "include_juce_audio_devices.mm";
-			path = "../../JuceLibraryCode/include_juce_audio_devices.mm";
-			sourceTree = "SOURCE_ROOT";
 		};
 		26D04946CF63CC5102E8EB51 = {
 			isa = PBXFileReference;
@@ -271,11 +257,11 @@
 			path = BiquadEq.component;
 			sourceTree = "BUILT_PRODUCTS_DIR";
 		};
-		1D4ED53FA06284E2CD5AFEB0 = {
+		24995731E76690B6BBA8E383 = {
 			isa = PBXFileReference;
-			lastKnownFileType = file.md;
-			name = README.md;
-			path = ../../Source/biquad/README.md;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_devices.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_devices.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
 		2BB286F35ABF51B1FED7A20A = {
@@ -390,13 +376,6 @@
 			path = "../../JuceLibraryCode/include_juce_gui_extra.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
-		7FE43C581CD8E95034F282F3 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = Biquad.h;
-			path = ../../Source/biquad/Biquad.h;
-			sourceTree = "SOURCE_ROOT";
-		};
 		85A657A6F4D96FD79CB39E5B = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -487,6 +466,13 @@
 			name = "juce_opengl";
 			path = "~/JUCE/modules/juce_opengl";
 			sourceTree = "<absolute>";
+		};
+		ABD58AE99E7562B130F7E036 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.md;
+			name = README.md;
+			path = ../../Source/BiquadFilter/README.md;
+			sourceTree = "SOURCE_ROOT";
 		};
 		AC6BA94E1A6B5A222A44B140 = {
 			isa = PBXFileReference;
@@ -579,11 +565,25 @@
 			path = System/Library/Frameworks/CoreAudio.framework;
 			sourceTree = SDKROOT;
 		};
+		D0E05383B47E5C306E95AB91 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Biquad.h;
+			path = ../../Source/BiquadFilter/Biquad.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		DAF03C00BB9BFFE6411E7F27 = {
 			isa = PBXFileReference;
 			lastKnownFileType = text.plist.xml;
 			name = "Info-AU.plist";
 			path = "Info-AU.plist";
+			sourceTree = "SOURCE_ROOT";
+		};
+		DBC8B294BC616F0408753877 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Biquad.cpp;
+			path = ../../Source/BiquadFilter/Biquad.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
 		DED512D1B570B45304364853 = {
@@ -635,22 +635,22 @@
 			path = "../../JuceLibraryCode/include_juce_audio_basics.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
-		E368B09FB2216A72C39604E9 = {
+		45339B8AE507F540E9986DC2 = {
 			isa = PBXGroup;
 			children = (
-				0D98B06C4E0A309F47E64690,
-				7FE43C581CD8E95034F282F3,
-				1D4ED53FA06284E2CD5AFEB0,
+				DBC8B294BC616F0408753877,
+				D0E05383B47E5C306E95AB91,
+				ABD58AE99E7562B130F7E036,
 			);
-			name = biquad;
+			name = BiquadFilter;
 			sourceTree = "<group>";
 		};
 		2AA011BBBCB9F2A417460A1F = {
 			isa = PBXGroup;
 			children = (
 				18D3A0BE063F0B0EE1F3E47A,
+				45339B8AE507F540E9986DC2,
 				0E521B6B6DAB52066B79F9DC,
-				E368B09FB2216A72C39604E9,
 				B1D0AAF84FC0DF9323D8158B,
 				BF9B3EBD130BD46C645B930D,
 			);
@@ -823,7 +823,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
-					"./Source",
+					"./Source/BiquadFilter",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -876,6 +876,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
+					"./Source/BiquadFilter",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -928,7 +929,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
-					"./Source",
+					"./Source/BiquadFilter",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -982,6 +983,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
+					"./Source/BiquadFilter",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1032,7 +1034,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
-					"./Source",
+					"./Source/BiquadFilter",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1079,6 +1081,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
+					"./Source/BiquadFilter",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1126,7 +1129,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
-					"./Source",
+					"./Source/BiquadFilter",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1173,6 +1176,7 @@
 					"/Users/takashiminagawa/SDKs/VST_SDK/VST3_SDK",
 					"../../JuceLibraryCode",
 					"$(HOME)/JUCE/modules",
+					"./Source/BiquadFilter",
 					"$(HOME)/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
@@ -1536,7 +1540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505EE4D8F5F3A263C934AC88,
-				D242EA90FAB7A9F08D67C2A7,
+				D9AD199564B17062A8477102,
 				9437DE5D3B2982975F9FF65E,
 				FEC8443876E55B13E060DEBF,
 				0531A5F76C98ED9FE31053E4,
