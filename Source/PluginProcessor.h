@@ -12,7 +12,7 @@
 
 #include <JuceHeader.h>
 #include <cmath>
-#include "biquad/Biquad.h"
+#include "BiquadFilter/Biquad.h"
 
 //==============================================================================
 /**
